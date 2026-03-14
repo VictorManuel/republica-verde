@@ -14,19 +14,7 @@ const products = [
     description: "Fermentado clásico de repollo con sal marina. Sabor tradicional y versátil.",
     tags: ["Ingredientes Naturales", "Apto Veganos"],
     image: "/white-sauerkraut-in-jar-fermented-cabbage-natural-.jpg",
-  },
-  {
-    name: "Kombucha",
-    description: "Bebida probiótica elaborada con té verde, azúcar orgánica y SCOBY. Fermentación de 7 a 21 días.",
-    tags: ["Sin Conservantes", "Probióticos"],
-    image: "/kombucha-bottle-fermented-tea-drink-natural-organi.jpg",
-  },
-  {
-    name: "Pepinos Encurtidos",
-    description: "Elaborados con vinagre de manzana orgánico, especias y hierbas aromáticas. Sin aditivos.",
-    tags: ["Ingredientes Naturales", "Apto Veganos"],
-    image: "/cucumber-kimchi-fermented-pickles-in-jar-korean-st.jpg",
-  },
+  }
 ]
 
 export function Products() {
