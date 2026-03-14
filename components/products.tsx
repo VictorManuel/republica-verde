@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { withBasePath } from "@/lib/with-base-path"
 
 const products = [
   {
@@ -43,7 +44,7 @@ export function Products() {
             >
               <div className="relative aspect-square overflow-hidden bg-muted">
                 <img
-                  src={product.image || "/placeholder.svg"}
+                  src={withBasePath(product.image || "/placeholder.svg")}
                   alt={product.name}
                   className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-700"
                 />
@@ -67,7 +68,7 @@ export function Products() {
           ))}
         </div>
 
-        <div className="flex justify-center mt-12">
+        {/* <div className="flex justify-center mt-12">
           <Button
             size="lg"
             className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 rounded-full"
@@ -75,7 +76,7 @@ export function Products() {
           >
             <Link href="/tienda">Comprar productos</Link>
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   )

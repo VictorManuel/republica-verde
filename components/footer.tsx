@@ -1,4 +1,5 @@
 import { Instagram, MapPin, Mail } from "lucide-react"
+import { withBasePath } from "@/lib/with-base-path"
 
 export function Footer() {
   return (
@@ -9,7 +10,7 @@ export function Footer() {
             {/* Brand */}
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <img src="/logo.png" alt="República Verde" className="h-16 w-auto" />
+                <img src={withBasePath("/logo.png")} alt="República Verde" className="h-16 w-auto" />
               </div>
               <p className="text-primary-foreground/80 leading-relaxed">
                 Fermentos vegetales artesanales. Alimentación consciente desde Tandil.

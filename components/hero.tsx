@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { withBasePath } from "@/lib/with-base-path"
 
 export function Hero() {
   return (
@@ -16,7 +17,7 @@ export function Hero() {
           {/* Content */}
           <div className="space-y-6 text-center">
             <div className="inline-flex items-center justify-center">
-              <img src="/logo.png" alt="República Verde" className="h-24 md:h-28 w-auto" />
+              <img src={withBasePath("/logo.png")} alt="República Verde" className="h-24 md:h-28 w-auto" />
             </div>
 
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight text-balance">
@@ -40,14 +41,14 @@ export function Hero() {
               >
                 <Link href="/tienda">Ver productos</Link>
               </Button>
-              <Button
+              {/* <Button
                 size="lg"
                 variant="outline"
                 className="border-2 border-white text-white hover:bg-white hover:text-black text-lg px-8 py-6 rounded-full bg-transparent"
                 asChild
               >
                 <Link href="/tienda">Hacer un pedido</Link>
-              </Button>
+              </Button> */}
             </div>
           </div>
 
@@ -55,7 +56,7 @@ export function Hero() {
           <div className="relative">
             <div className="relative aspect-square rounded-[3rem] overflow-hidden shadow-2xl">
               <img
-                src="/artisanal-fermented-vegetables-in-glass-jars-with-.jpg"
+                src={withBasePath("/artisanal-fermented-vegetables-in-glass-jars-with-.jpg")}
                 alt="Fermentos vegetales artesanales"
                 className="object-cover w-full h-full"
               />
