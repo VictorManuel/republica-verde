@@ -4,7 +4,7 @@ import { withBasePath } from "@/lib/with-base-path"
 
 export function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-black">
+    <section id="hero" className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-black">
       {/* Organic wave decoration at bottom */}
       <div className="wave-decoration absolute bottom-0 left-0 w-full">
         <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="fill-background">
@@ -36,19 +36,19 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <Button
                 size="lg"
-                className="bg-secondary text-black hover:bg-secondary/90 text-lg px-8 py-6 rounded-full"
-                asChild
-              >
-                <Link href="/tienda">Ver productos</Link>
-              </Button>
-              {/* <Button
-                size="lg"
                 variant="outline"
                 className="border-2 border-white text-white hover:bg-white hover:text-black text-lg px-8 py-6 rounded-full bg-transparent"
                 asChild
               >
-                <Link href="/tienda">Hacer un pedido</Link>
-              </Button> */}
+                <Link href="/#productos">Ver productos</Link>
+              </Button>
+              <Button
+                size="lg"
+                className="bg-secondary text-black hover:bg-secondary/90 text-lg px-8 py-6 rounded-full"
+                asChild
+              >
+                <Link href="/articulos">Ver articulos</Link>
+              </Button>
             </div>
           </div>
 

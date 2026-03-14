@@ -25,21 +25,8 @@ export const metadata: Metadata = {
     "Alimentación consciente · Apto vegano · Fermentos vegetales artesanales en Tandil. Kimchi, chucrut y más productos naturales hechos a mano.",
   generator: "v0.app",
   icons: {
-    icon: [
-      {
-        url: `${basePath}/icon-light-32x32.png`,
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: `${basePath}/icon-dark-32x32.png`,
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: `${basePath}/icon.svg`,
-        type: "image/svg+xml",
-      },
-    ],
-    apple: `${basePath}/apple-icon.png`,
+    icon: `${basePath}/logo.png`,
+    apple: `${basePath}/logo.png`,
   },
 }
 

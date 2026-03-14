@@ -1,6 +1,4 @@
 import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
 import { withBasePath } from "@/lib/with-base-path"
 
 const products = [
@@ -20,7 +18,7 @@ const products = [
 
 export function Products() {
   return (
-    <section className="py-20 md:py-32 bg-muted/30 relative overflow-hidden">
+    <section id="productos" className="py-20 md:py-32 bg-muted/30 relative overflow-hidden">
       {/* Decorative blob */}
       <div className="absolute top-20 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-[100px]"></div>
       <div className="absolute bottom-20 left-0 w-96 h-96 bg-accent/10 rounded-full blur-[100px]"></div>
@@ -67,16 +65,6 @@ export function Products() {
             </div>
           ))}
         </div>
-
-        {/* <div className="flex justify-center mt-12">
-          <Button
-            size="lg"
-            className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 rounded-full"
-            asChild
-          >
-            <Link href="/tienda">Comprar productos</Link>
-          </Button>
-        </div> */}
       </div>
     </section>
   )
