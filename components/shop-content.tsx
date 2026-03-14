@@ -28,25 +28,7 @@ const products = [
     size: "345g",
     tags: ["Ingredientes Naturales", "Apto Veganos"],
     image: "/white-sauerkraut-in-jar-fermented-cabbage-natural-.jpg",
-  },
-  {
-    id: 3,
-    name: "Kombucha",
-    description: "Bebida probiótica elaborada con té verde, azúcar orgánica y SCOBY. Fermentación de 7 a 21 días.",
-    price: 3200,
-    size: "345ml",
-    tags: ["Sin Conservantes", "Probióticos"],
-    image: "/kombucha-bottle-fermented-tea-drink-natural-organi.jpg",
-  },
-  {
-    id: 4,
-    name: "Pepinos Encurtidos",
-    description: "Elaborados con vinagre de manzana orgánico, especias y hierbas aromáticas. Sin aditivos.",
-    price: 2900,
-    size: "345g",
-    tags: ["Ingredientes Naturales", "Apto Veganos"],
-    image: "/cucumber-kimchi-fermented-pickles-in-jar-korean-st.jpg",
-  },
+  }
 ]
 
 type CartItem = {
