@@ -9,6 +9,7 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { ShoppingCart, Minus, Plus, X, Package } from "lucide-react"
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
+import { withBasePath } from "@/lib/with-base-path"
 
 const products = [
   {
@@ -79,7 +80,7 @@ export function ShopContent() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <img src="/logo.png" alt="República Verde" className="h-10 w-auto" />
+              <img src={withBasePath("/logo.png")} alt="República Verde" className="h-10 w-auto" />
               <div>
                 <h1 className="font-serif text-2xl font-bold">Tienda</h1>
                 <p className="text-sm text-primary-foreground/80">Fermentos vegetales artesanales</p>
@@ -122,7 +123,7 @@ export function ShopContent() {
                       {cart.map((item) => (
                         <div key={item.id} className="flex gap-4 bg-muted/30 rounded-xl p-4">
                           <img
-                            src={item.image || "/placeholder.svg"}
+                            src={withBasePath(item.image || "/placeholder.svg")}
                             alt={item.name}
                             className="w-20 h-20 rounded-lg object-cover"
                           />
@@ -205,7 +206,7 @@ export function ShopContent() {
               >
                 <div className="relative aspect-square overflow-hidden bg-muted">
                   <img
-                    src={product.image || "/placeholder.svg"}
+                    src={withBasePath(product.image || "/placeholder.svg")}
                     alt={product.name}
                     className="object-cover w-full h-full hover:scale-110 transition-transform duration-700"
                   />

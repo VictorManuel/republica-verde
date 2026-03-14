@@ -7,6 +7,9 @@ const nextConfig = {
   output: "export",
   basePath: repoBasePath,
   assetPrefix: repoBasePath,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: repoBasePath,
+  },
   typescript: {
     ignoreBuildErrors: true,
   },

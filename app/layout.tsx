@@ -5,6 +5,8 @@ import { Inter, Crimson_Text } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? ""
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -23,21 +25,8 @@ export const metadata: Metadata = {
     "Alimentación consciente · Apto vegano · Fermentos vegetales artesanales en Tandil. Kimchi, chucrut y más productos naturales hechos a mano.",
   generator: "v0.app",
   icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
+    icon: `${basePath}/logo.png`,
+    apple: `${basePath}/logo.png`,
   },
 }
 

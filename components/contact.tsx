@@ -23,7 +23,7 @@ export function Contact() {
   }
 
   return (
-    <section className="py-20 md:py-32 bg-primary text-primary-foreground relative overflow-hidden">
+    <section id="contacto" className="py-20 md:py-32 bg-primary text-primary-foreground relative overflow-hidden">
       {/* Organic wave decoration at top */}
       <div className="wave-decoration absolute top-0 left-0 w-full rotate-180">
         <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="fill-background">
@@ -48,11 +48,11 @@ export function Contact() {
                 className="w-full bg-background text-primary hover:bg-background/90 text-lg py-6 rounded-2xl justify-start gap-4"
                 asChild
               >
-                <Link href="/tienda">
+                <Link href="/articulos">
                   <MessageCircle className="w-6 h-6" />
                   <div className="text-left">
-                    <div className="font-semibold">Comprar online</div>
-                    <div className="text-sm opacity-80">Ver productos y hacer pedido</div>
+                    <div className="font-semibold">Tienda proximamente</div>
+                    <div className="text-sm opacity-80">Mientras tanto, mira nuestros articulos</div>
                   </div>
                 </Link>
               </Button>
